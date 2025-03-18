@@ -1,4 +1,4 @@
-const APIKEY = "11721070119f7bbc9e555611b3693910"
+const APIKEY = 0
 
 const searchCityName = "Stockton"
 
