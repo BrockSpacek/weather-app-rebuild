@@ -40,11 +40,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="">
+        <div className="flex justify-center mt-[140px]">
           <MainCard />
         </div>
 
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-20">
           <OtherWeatherCard />
           <OtherWeatherCard />
           <OtherWeatherCard />
