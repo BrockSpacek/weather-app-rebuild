@@ -2,6 +2,7 @@ interface WeatherInterface{
     name: string,
     weather: {
         description: string,
+        main: string,
         icon: string
     }[],
 main:{

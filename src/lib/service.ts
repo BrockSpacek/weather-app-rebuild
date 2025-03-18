@@ -1,4 +1,5 @@
-const APIKEY = "";
+const APIKEY = ""
+;
 
 const searchCityName = "Seattle"
 
