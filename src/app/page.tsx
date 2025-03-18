@@ -3,6 +3,9 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import Image from "next/image";
 import BgImage from "@/assets/Weather Sprint One Piece Background.jpg";
+import OtherWeatherCard from "@/components/OtherWeatherCard";
+import MainCard from "@/components/MainCard";
+
 
 export default function Home() {
   const [location, setLocation] = useState("");
@@ -27,7 +30,7 @@ export default function Home() {
           <p className="ml-[4%] text-3xl"> {time} </p>
         </div>
         <div className="flex justify-center">
-          <div className="w-[35%] h-[100px] mt-3">
+          <div className="w-[33%] mt-3">
             <Input
               id="location"
               placeholder="Location"
@@ -35,6 +38,14 @@ export default function Home() {
               className="bg-[#C38945] placeholder-black"
             />
           </div>
+        </div>
+
+        <div className="flex justify-center mt-10">
+          <OtherWeatherCard />
+          <OtherWeatherCard />
+          <OtherWeatherCard />
+          <OtherWeatherCard />
+          <OtherWeatherCard />
         </div>
       </div>
     </main>
