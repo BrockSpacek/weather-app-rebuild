@@ -32,7 +32,9 @@ const MainCard = () => {
             <p className='text-2xl mt-8'>Feels Like: {feelsLike}°</p>
         </div>
         <div>
-            <img className='w-[140px] h-[125px]' src={icon} alt="Weather Icon" />
+            <div className='flex justify-center'>
+                <img className='w-[140px] h-[125px]' src={icon} alt="Weather Icon" />
+            </div>
             <p className='text-3xl text-center'> {weatherType} </p>
         </div>
     </div>
