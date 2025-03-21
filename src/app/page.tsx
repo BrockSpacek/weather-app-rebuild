@@ -30,7 +30,7 @@ export default function Home() {
           <p className="ml-[4%] text-3xl"> {time} </p>
         </div>
         <div className="flex justify-center">
-          <div className="w-[33%] mt-3">
+          <div className="lg:w-[33%] md:w-[50%] w-[60%] mt-3">
             <Input
               id="location"
               placeholder="Location"
@@ -44,7 +44,8 @@ export default function Home() {
           <MainCard />
         </div>
 
-        <div className="flex justify-center mt-20">
+        <div className="flex justify-center mt-20 gap-3">
+          
           <OtherWeatherCard />
           <OtherWeatherCard />
           <OtherWeatherCard />
