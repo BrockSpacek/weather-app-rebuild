@@ -1,7 +1,7 @@
 import { WeatherInterface } from "@/interface/interface";
 import { FiveDayInterface } from "@/interface/interface";
 
-const APIKEY = "11721070119f7bbc9e555611b3693910";
+const APIKEY = process.env.NEXT_PUBLIC_API_KEY;
 
 export const getWeather = async (lat: number, lon: number) => {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKEY}&units=imperial`);
